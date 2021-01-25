@@ -10,10 +10,6 @@ function italic() {
     editor.document.execCommand('italic', false, null);
 }
 
-function list() {
-    editor.document.execCommand('insertunorderedlist', false, '');
-}
-
 function underline() {
     editor.document.execCommand('underline', false, null);
 }
@@ -30,11 +26,7 @@ function fontColor() {
 
 function highlight() {
     let color = prompt("Enter a color code or name of color)", "")
-    editor.document.execCommand('hilitecolor', false, color);
-}
-
-function align() {
-    editor.document.execCommand('bold', false, null);
+    editor.document.execCommand('backcolor', false, color);
 }
 
 function link() {
